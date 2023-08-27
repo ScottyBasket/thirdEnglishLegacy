@@ -1,0 +1,183 @@
+body{
+    background-image: url(backgrounds/background2.png);
+    background-attachment:fixed;
+    background-position:10% -65%;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+
+#wrap{
+    background-color:#FDFDF8;
+    opacity: .8;
+    height:100%;
+    width:100vw;
+    position:fixed;
+    z-index: -1;
+    margin:0;
+}
+
+h1{
+    margin: 7% auto 0% auto;
+    width:100%;
+    text-align: center;
+    font-size:10vw;
+    color:var(--main-dark-color);
+    font-family:var(--font1);
+}
+
+#galWrap{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+
+.image{
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-color: transparent;
+    width:80%;
+    height:60%;
+    margin:5% 10%;
+}
+
+.image2{
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-color: transparent;
+    width:80%;
+    height:60%;
+    margin:5% 10%;
+}
+
+.nameTxt{
+    width:95%;
+    height:45%;
+    margin:2.5% 2.5%;
+    text-align: center;
+    background-color: transparent;
+}
+
+.nameTxt h2, .nameTxt h3{
+    background-color: transparent;
+    font-family:var(--font2);
+    color:var(--third-color);
+}
+
+.card{
+    background: rgba(134,166,157, 0.25);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.8px);
+    -webkit-backdrop-filter: blur(6.8px);
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    height:250px; 
+    width:300px;
+    margin:2.5% 2.5%;
+    cursor:pointer;
+    border-color: transparent;
+}
+
+.card:hover{
+    background: rgba(134,166,157, 0.45);
+    border-color: transparent;
+}
+
+#overlay {
+    overflow:auto;
+    font-family: var(--font2);
+    position: fixed;
+    display:none;
+    width: 95%;
+    height: 80%;
+    z-index: 2;
+    border-radius:45px;
+    background: rgba(255, 255, 255, 0.71);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.8px);
+    -webkit-backdrop-filter: blur(6.8px);
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    margin: 7.5% 0 0 0;
+}
+
+#overlay:hover{
+    cursor:pointer;
+}
+
+.left{
+    width:40%;
+    height:100%;
+    float:left;
+    background-color: transparent;
+    margin:5%;
+    position:fixed;
+}
+
+#leftImage{
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-color:transparent;
+    height:60%;
+    border-radius: 10px;
+}
+
+#right{
+    background-color: transparent;
+    height:100%;
+    width:50%;
+    float:right;
+}
+
+#rightText{
+    background-color: transparent;
+    line-height: 2em;
+    margin: 10% 10%;
+}
+
+@media (max-width: 800px){
+
+    #overlay{
+        overflow:auto;
+    }
+
+    .left{
+        width:90%;
+        background-color: transparent;
+        margin:5% 5% 0px 5%;
+        height:45%;
+        position:relative;
+        background-color: transparent;
+    }
+    
+    #leftImage{
+        background-repeat:no-repeat;
+        background-position: center;
+        background-size: contain;
+        height:100%;
+        border-radius: 10px;
+        background-color: transparent;
+    }
+    
+    #right{
+        background-color: transparent;
+        width:100%;
+        height:fit-content;
+        margin:0%;
+    }
+    
+    #rightText{
+        background-color: transparent;
+        line-height: 2em;
+        height:fit-content;
+        margin:5%;
+    }
+
+    #overlay{
+        margin-top:7%;
+        height: 90%;
+    }
+
+}

@@ -1,0 +1,150 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --font: 'Sacramento';
+    --prime-font: 'Work Sans', sans-serif;
+    --bg: #FDFDF8;
+    --color-one: #86A69D;
+}
+
+body{
+    background-image: url(backgrounds/mainBackground.png);
+    background-attachment:fixed;
+    background-position:50% -10%;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+
+#wrap{
+    background-color:#FDFDF8;
+    opacity: .8;
+    height:100%;
+    width:100vw;
+    position:fixed;
+    z-index: -1;
+    margin:-7% 0;
+}
+
+h1, h2, h3{
+    font-family: var(--font);
+    color: var(--color-one);
+    background-color: transparent;
+}
+
+main{
+    margin-top:7%;
+}
+
+h1{
+    font-size: 12vw;
+}
+
+#title{
+    width: 100%;
+    text-align: center;
+    margin-bottom:2.5%;
+}
+
+#title h1{
+    width:80%;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.center{
+    display:flex;
+    flex-wrap: wrap;
+    width:100%;
+    justify-content: space-between;
+}
+
+.images{
+    width:42%;
+    margin: 4%;
+}
+
+img{
+    width:100%;
+    margin: 0 auto;
+    border-radius: 25px;
+}
+
+#weeklyColumns{
+    width:100%;
+    border: 1px;
+    border-radius: 45px;
+    background-color: var(--bg);
+}
+
+.column{
+    width:90%;
+    margin: 2.5vw .5vw;
+    padding: 0 1vw 2vw 1vw;
+    display:flex;
+}
+
+.title{
+    float:left;
+}
+
+.date{
+    float:right;
+}
+
+h2{
+    font-size:2.5em;
+    text-align: center;
+}
+
+.dot{
+    flex: 1;
+    border-bottom: 2px dashed;
+    border-color:var(--main-dark-color);
+    height:1em;
+    margin-left:.33em;
+    margin-right:.33em;
+}
+
+p{
+    font-family: var(--font2);
+    color:var(--main-dark-color);
+    font-size: 1.1em;
+}
+
+#weeklyColumns h2{
+    padding-top:.5em;
+}
+
+#events{
+    width:88%;
+    border: 1px;
+    border-radius: 45px;
+    background-color: var(--bg);
+    margin: 0 4% 3% 4%;
+    padding: 2%;
+}
+
+.event{
+    margin-top:2em;
+    width:90%;
+    margin: 2.5vw .5vw;
+    padding: 0 1vw 2vw 1vw;
+    display:flex;
+}
+
+@media screen and (max-width: 800px){
+
+    .images{
+        width:92%;
+        margin: 4%;
+    }
+
+    #weeklyColumns{
+        padding-bottom:1em;
+    }
+
+}
